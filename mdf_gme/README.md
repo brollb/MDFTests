@@ -22,5 +22,5 @@ Finally, import the JSON into WebGME just like the [examples](https://github.com
 
 ### Loading instances to and from WebGME importable JSON and MDF
 ```
-node bin/instance_converter path/to/MDForGME/instance.json
+node bin/instance_converter path/to/GMEorMDF/instance.json
 ```
