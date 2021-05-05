@@ -1,0 +1,8 @@
+name: mdf
+channels:
+  - defaults
+dependencies:
+  - pip=21.0.1
+  - pip:
+    - git+https://github.com/ModECI/MDF.git
+    - git+https://github.com/NeuroML/NeuroMLlite.git
