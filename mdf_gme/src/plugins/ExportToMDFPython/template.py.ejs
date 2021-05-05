@@ -8,4 +8,4 @@ model = Model()
 model = _parse_element(data, model)
 graph = model.graphs[0]
 egraph = EvaluableGraph(graph, False)
-result = graph  # DeepForge requires the concept of interest to be available as "result"
+result = egraph  # DeepForge requires the concept of interest to be available as "result"
