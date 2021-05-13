@@ -13,7 +13,11 @@ function createMetaNode(name, data) {
     };
 
     if (name.toLowerCase().includes('port')) {
-        nodeDef.registry = {isPort: true};
+        const portSide = name.toLowerCase().includes('input') ? 'W' : 'E';
+        nodeDef.registry = {
+            isPort: true,
+            PortOrientation: portSide
+        };
     }
 
     return merge(nodeDef, parameters, childrenMeta);
